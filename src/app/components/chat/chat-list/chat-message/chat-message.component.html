@@ -1,1 +1,5 @@
-<p>chat-message works!</p>
+@if (message.sender === 'MyCalendar AI') {
+    <app-system-message [message]="message"></app-system-message>
+} @else {
+    <app-user-message [message]="message"></app-user-message>
+}

@@ -1,0 +1,20 @@
+<div class="flex items-end gap-3 p-4">
+    <div
+        class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-10 shrink-0"
+        style="
+            background-image: url('{{ message.sender_img_url }}');
+        "
+    ></div>
+    <div class="flex flex-1 flex-col gap-1 items-start">
+        <p
+            class="text-[#877564] text-[13px] font-normal leading-normal max-w-[360px]"
+        >
+            {{ message.sender }}
+        </p>
+        <p
+            class="text-base font-normal leading-normal flex max-w-[360px] rounded-xl px-4 py-3 bg-[var(--color-secondary)] text-[var(--text-color-primary)]"
+        >
+            {{ message.content }}
+        </p>
+    </div>
+</div>
